@@ -28,7 +28,6 @@ Tools used include:
     
 #Screenshots
 
-![](http://puu.sh/cDXLt/bb441c403f.png)
-![](http://puu.sh/cDXKd/a92401c6fe.png)
-![](http://puu.sh/cDXRv/ade189769f.png)
+Coming soon!
+
 Enjoy!
