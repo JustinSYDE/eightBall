@@ -19,8 +19,8 @@
 		E816E1E11A059D15009EE31B /* threeBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E816E1DF1A059D15009EE31B /* threeBall.png */; };
 		E816E1E21A059D15009EE31B /* twoBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E816E1E01A059D15009EE31B /* twoBall.png */; };
 		E81DA0341A08826A00C0029E /* eightBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E81DA0331A08826A00C0029E /* eightBall.png */; };
-		E85EFE7F1A09D89000F6AEE6 /* answerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E85EFE7E1A09D89000F6AEE6 /* answerViewController.m */; };
 		E85EFE811A09ED9000F6AEE6 /* 8ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E85EFE801A09ED9000F6AEE6 /* 8ball.png */; };
+		E85EFE841A09FEF600F6AEE6 /* answerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E85EFE831A09FEF600F6AEE6 /* answerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		E816E1DF1A059D15009EE31B /* threeBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = threeBall.png; path = images/threeBall.png; sourceTree = "<group>"; };
 		E816E1E01A059D15009EE31B /* twoBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twoBall.png; path = images/twoBall.png; sourceTree = "<group>"; };
 		E81DA0331A08826A00C0029E /* eightBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eightBall.png; path = images/eightBall.png; sourceTree = "<group>"; };
-		E85EFE7D1A09D84E00F6AEE6 /* answerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = answerViewController.h; path = ../answerViewController.h; sourceTree = "<group>"; };
-		E85EFE7E1A09D89000F6AEE6 /* answerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = answerViewController.m; path = ../answerViewController.m; sourceTree = "<group>"; };
 		E85EFE801A09ED9000F6AEE6 /* 8ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8ball.png; path = images/8ball.png; sourceTree = "<group>"; };
+		E85EFE821A09FEF600F6AEE6 /* answerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = answerViewController.h; sourceTree = "<group>"; };
+		E85EFE831A09FEF600F6AEE6 /* answerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = answerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			children = (
 				E816E1D61A059045009EE31B /* images */,
 				E816E1AE1A057444009EE31B /* AppDelegate.h */,
-				E85EFE7D1A09D84E00F6AEE6 /* answerViewController.h */,
-				E85EFE7E1A09D89000F6AEE6 /* answerViewController.m */,
+				E85EFE821A09FEF600F6AEE6 /* answerViewController.h */,
+				E85EFE831A09FEF600F6AEE6 /* answerViewController.m */,
 				E816E1AF1A057444009EE31B /* AppDelegate.m */,
 				E816E1D01A0575D5009EE31B /* Main.storyboard */,
 				E816E1B11A057444009EE31B /* ViewController.h */,
@@ -256,10 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85EFE7F1A09D89000F6AEE6 /* answerViewController.m in Sources */,
 				E816E1B31A057444009EE31B /* ViewController.m in Sources */,
 				E816E1B01A057444009EE31B /* AppDelegate.m in Sources */,
 				E816E1AD1A057444009EE31B /* main.m in Sources */,
+				E85EFE841A09FEF600F6AEE6 /* answerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
