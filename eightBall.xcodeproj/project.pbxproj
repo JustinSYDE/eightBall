@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E816E1AD1A057444009EE31B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E816E1AC1A057444009EE31B /* main.m */; };
+		E816E1B01A057444009EE31B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E816E1AF1A057444009EE31B /* AppDelegate.m */; };
+		E816E1B31A057444009EE31B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E816E1B21A057444009EE31B /* ViewController.m */; };
+		E816E1B81A057444009EE31B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E816E1B71A057444009EE31B /* Images.xcassets */; };
+		E816E1BB1A057444009EE31B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E816E1B91A057444009EE31B /* LaunchScreen.xib */; };
+		E816E1C71A057444009EE31B /* eightBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E816E1C61A057444009EE31B /* eightBallTests.m */; };
+		E816E1D11A0575D5009EE31B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E816E1D01A0575D5009EE31B /* Main.storyboard */; };
+		E816E1D51A05903F009EE31B /* billiard3.png in Resources */ = {isa = PBXBuildFile; fileRef = E816E1D41A05903F009EE31B /* billiard3.png */; };
+		E816E1DA1A059B24009EE31B /* oneBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E816E1D91A059B24009EE31B /* oneBall.png */; };
+		E816E1E11A059D15009EE31B /* threeBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E816E1DF1A059D15009EE31B /* threeBall.png */; };
+		E816E1E21A059D15009EE31B /* twoBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E816E1E01A059D15009EE31B /* twoBall.png */; };
+		E81DA0341A08826A00C0029E /* eightBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E81DA0331A08826A00C0029E /* eightBall.png */; };
+		E85EFE7F1A09D89000F6AEE6 /* answerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E85EFE7E1A09D89000F6AEE6 /* answerViewController.m */; };
+		E85EFE811A09ED9000F6AEE6 /* 8ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E85EFE801A09ED9000F6AEE6 /* 8ball.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E816E1C11A057444009EE31B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E816E19F1A057444009EE31B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E816E1A61A057444009EE31B;
+			remoteInfo = eightBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E816E1A71A057444009EE31B /* eightBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eightBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E816E1AB1A057444009EE31B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E816E1AC1A057444009EE31B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E816E1AE1A057444009EE31B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E816E1AF1A057444009EE31B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E816E1B11A057444009EE31B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E816E1B21A057444009EE31B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E816E1B71A057444009EE31B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E816E1BA1A057444009EE31B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E816E1C01A057444009EE31B /* eightBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eightBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E816E1C51A057444009EE31B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E816E1C61A057444009EE31B /* eightBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eightBallTests.m; sourceTree = "<group>"; };
+		E816E1D01A0575D5009EE31B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E816E1D41A05903F009EE31B /* billiard3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = billiard3.png; path = images/billiard3.png; sourceTree = "<group>"; };
+		E816E1D91A059B24009EE31B /* oneBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = oneBall.png; path = images/oneBall.png; sourceTree = "<group>"; };
+		E816E1DF1A059D15009EE31B /* threeBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = threeBall.png; path = images/threeBall.png; sourceTree = "<group>"; };
+		E816E1E01A059D15009EE31B /* twoBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twoBall.png; path = images/twoBall.png; sourceTree = "<group>"; };
+		E81DA0331A08826A00C0029E /* eightBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eightBall.png; path = images/eightBall.png; sourceTree = "<group>"; };
+		E85EFE7D1A09D84E00F6AEE6 /* answerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = answerViewController.h; path = ../answerViewController.h; sourceTree = "<group>"; };
+		E85EFE7E1A09D89000F6AEE6 /* answerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = answerViewController.m; path = ../answerViewController.m; sourceTree = "<group>"; };
+		E85EFE801A09ED9000F6AEE6 /* 8ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8ball.png; path = images/8ball.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E816E1A41A057444009EE31B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E816E1BD1A057444009EE31B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E816E19E1A057444009EE31B = {
+			isa = PBXGroup;
+			children = (
+				E816E1A91A057444009EE31B /* eightBall */,
+				E816E1C31A057444009EE31B /* eightBallTests */,
+				E816E1A81A057444009EE31B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E816E1A81A057444009EE31B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E816E1A71A057444009EE31B /* eightBall.app */,
+				E816E1C01A057444009EE31B /* eightBallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E816E1A91A057444009EE31B /* eightBall */ = {
+			isa = PBXGroup;
+			children = (
+				E816E1D61A059045009EE31B /* images */,
+				E816E1AE1A057444009EE31B /* AppDelegate.h */,
+				E85EFE7D1A09D84E00F6AEE6 /* answerViewController.h */,
+				E85EFE7E1A09D89000F6AEE6 /* answerViewController.m */,
+				E816E1AF1A057444009EE31B /* AppDelegate.m */,
+				E816E1D01A0575D5009EE31B /* Main.storyboard */,
+				E816E1B11A057444009EE31B /* ViewController.h */,
+				E816E1B21A057444009EE31B /* ViewController.m */,
+				E816E1B71A057444009EE31B /* Images.xcassets */,
+				E816E1B91A057444009EE31B /* LaunchScreen.xib */,
+				E816E1AA1A057444009EE31B /* Supporting Files */,
+			);
+			path = eightBall;
+			sourceTree = "<group>";
+		};
+		E816E1AA1A057444009EE31B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E816E1AB1A057444009EE31B /* Info.plist */,
+				E816E1AC1A057444009EE31B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E816E1C31A057444009EE31B /* eightBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				E816E1C61A057444009EE31B /* eightBallTests.m */,
+				E816E1C41A057444009EE31B /* Supporting Files */,
+			);
+			path = eightBallTests;
+			sourceTree = "<group>";
+		};
+		E816E1C41A057444009EE31B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E816E1C51A057444009EE31B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E816E1D61A059045009EE31B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E816E1D41A05903F009EE31B /* billiard3.png */,
+				E816E1DF1A059D15009EE31B /* threeBall.png */,
+				E816E1E01A059D15009EE31B /* twoBall.png */,
+				E81DA0331A08826A00C0029E /* eightBall.png */,
+				E85EFE801A09ED9000F6AEE6 /* 8ball.png */,
+				E816E1D91A059B24009EE31B /* oneBall.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E816E1A61A057444009EE31B /* eightBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E816E1CA1A057444009EE31B /* Build configuration list for PBXNativeTarget "eightBall" */;
+			buildPhases = (
+				E816E1A31A057444009EE31B /* Sources */,
+				E816E1A41A057444009EE31B /* Frameworks */,
+				E816E1A51A057444009EE31B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eightBall;
+			productName = eightBall;
+			productReference = E816E1A71A057444009EE31B /* eightBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E816E1BF1A057444009EE31B /* eightBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E816E1CD1A057444009EE31B /* Build configuration list for PBXNativeTarget "eightBallTests" */;
+			buildPhases = (
+				E816E1BC1A057444009EE31B /* Sources */,
+				E816E1BD1A057444009EE31B /* Frameworks */,
+				E816E1BE1A057444009EE31B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E816E1C21A057444009EE31B /* PBXTargetDependency */,
+			);
+			name = eightBallTests;
+			productName = eightBallTests;
+			productReference = E816E1C01A057444009EE31B /* eightBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E816E19F1A057444009EE31B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = justinSYDE;
+				TargetAttributes = {
+					E816E1A61A057444009EE31B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E816E1BF1A057444009EE31B = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = E816E1A61A057444009EE31B;
+					};
+				};
+			};
+			buildConfigurationList = E816E1A21A057444009EE31B /* Build configuration list for PBXProject "eightBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E816E19E1A057444009EE31B;
+			productRefGroup = E816E1A81A057444009EE31B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E816E1A61A057444009EE31B /* eightBall */,
+				E816E1BF1A057444009EE31B /* eightBallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E816E1A51A057444009EE31B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E816E1BB1A057444009EE31B /* LaunchScreen.xib in Resources */,
+				E816E1E11A059D15009EE31B /* threeBall.png in Resources */,
+				E816E1E21A059D15009EE31B /* twoBall.png in Resources */,
+				E816E1B81A057444009EE31B /* Images.xcassets in Resources */,
+				E81DA0341A08826A00C0029E /* eightBall.png in Resources */,
+				E85EFE811A09ED9000F6AEE6 /* 8ball.png in Resources */,
+				E816E1D51A05903F009EE31B /* billiard3.png in Resources */,
+				E816E1DA1A059B24009EE31B /* oneBall.png in Resources */,
+				E816E1D11A0575D5009EE31B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E816E1BE1A057444009EE31B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E816E1A31A057444009EE31B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85EFE7F1A09D89000F6AEE6 /* answerViewController.m in Sources */,
+				E816E1B31A057444009EE31B /* ViewController.m in Sources */,
+				E816E1B01A057444009EE31B /* AppDelegate.m in Sources */,
+				E816E1AD1A057444009EE31B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E816E1BC1A057444009EE31B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E816E1C71A057444009EE31B /* eightBallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E816E1C21A057444009EE31B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E816E1A61A057444009EE31B /* eightBall */;
+			targetProxy = E816E1C11A057444009EE31B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E816E1B91A057444009EE31B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E816E1BA1A057444009EE31B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E816E1C81A057444009EE31B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E816E1C91A057444009EE31B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E816E1CB1A057444009EE31B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eightBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E816E1CC1A057444009EE31B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eightBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E816E1CE1A057444009EE31B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = eightBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eightBall.app/eightBall";
+			};
+			name = Debug;
+		};
+		E816E1CF1A057444009EE31B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = eightBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eightBall.app/eightBall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E816E1A21A057444009EE31B /* Build configuration list for PBXProject "eightBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E816E1C81A057444009EE31B /* Debug */,
+				E816E1C91A057444009EE31B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E816E1CA1A057444009EE31B /* Build configuration list for PBXNativeTarget "eightBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E816E1CB1A057444009EE31B /* Debug */,
+				E816E1CC1A057444009EE31B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E816E1CD1A057444009EE31B /* Build configuration list for PBXNativeTarget "eightBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E816E1CE1A057444009EE31B /* Debug */,
+				E816E1CF1A057444009EE31B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E816E19F1A057444009EE31B /* Project object */;
+}

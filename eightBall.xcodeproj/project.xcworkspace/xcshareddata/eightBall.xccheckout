@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B097E28C-889B-437F-98CC-0DABF0DF896D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>eightBall</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>98C1E980E7B7D08D461F26B25278F06F1B0945A3</key>
+		<string>https://github.com/JustinSYDE/eightBall</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>eightBall.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>98C1E980E7B7D08D461F26B25278F06F1B0945A3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JustinSYDE/eightBall</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>98C1E980E7B7D08D461F26B25278F06F1B0945A3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>98C1E980E7B7D08D461F26B25278F06F1B0945A3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>eightBall</string>
+		</dict>
+	</array>
+</dict>
+</plist>
