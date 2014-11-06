@@ -27,7 +27,7 @@
     /*------------------------------------- SYMBOL TABLE ---------------------------------------*/
 
     array = [[NSMutableArray alloc] init];
-    NSString *glyphArray[10] = {@"❧", @"៦", @"ྡྷ", @"۝", @"ཆ", @"☯", @"♞", @"྿", @"☢", @"Ͼ"};
+    NSString *glyphArray[10] = {@"❧", @"Ω", @"ྡྷ", @"۝", @"ཆ", @"☯", @"♞", @"྿", @"☢", @"Ж"};
     int num9 = arc4random_uniform(10);
     int num;
     NSString *number;
@@ -39,7 +39,6 @@
         
         
         if ((i != 0 && i != 99) && (i%9 == 0)){
-            NSLog(@"%d entered here", i);
             number = [NSString stringWithFormat:@"%@%i", glyphArray[num9], i];
         }
         
