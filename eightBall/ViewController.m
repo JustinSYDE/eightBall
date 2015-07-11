@@ -7,27 +7,83 @@
 //
 
 #import "ViewController.h"
-#import "answerViewController.h"
+#import "TopHalfView.h"
+#import "BottomHalfView.h"
 
 @interface ViewController ()
-
-//@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
-
+@property (nonatomic) NSArray *glyphArray;
+@property (nonatomic) NSString *ans;
+@property (nonatomic) NSMutableArray *array;
+@property (nonatomic) NSInteger step;
+@property (nonatomic) TopHalfView *topHalfView;
+@property (nonatomic) BottomHalfView *bottomHalfView;
 @end
 
-@implementation ViewController {
-    NSMutableArray *array;
-    NSString *ans;
+@implementation ViewController
+
+- (NSArray *)glyphArray {
+    if (!_glyphArray)
+        _glyphArray = @[@"❧", @"Ω", @"ྡྷ", @"۝", @"ཆ", @"☯", @"♞", @"྿", @"☢", @"Ж"];
+    return _glyphArray;
+}
+
+- (NSString *)ans {
+    if (!_ans)
+        _ans = [[NSString alloc] init];
+    return _ans;
+}
+
+- (NSMutableArray *)array {
+    if (!_array)
+        _array = [[NSMutableArray alloc] init];
+    
+    return _array;
+}
+
+- (NSInteger)step {
+    if (!_step)
+        _step = 0;
+    return _step;
+}
+
+- (TopHalfView *)topHalfView {
+    if (!_topHalfView) {
+        float const width = self.view.frame.size.width;
+        float const height = self.view.frame.size.height * 0.5;
+        float const x = 0;
+        float const y = 0;
+        CGRect newFrame = CGRectMake(x, y, width, height);
+        _topHalfView = [[TopHalfView alloc] initWithFrame:newFrame];
+    }
+    
+    return _topHalfView;
+}
+
+- (BottomHalfView *)bottomHalfView {
+    if (!_bottomHalfView) {
+        float const width = self.view.frame.size.width;
+        float const height = self.view.frame.size.height * 0.5;
+        float const x = 0;
+        float const y = self.view.frame.size.height *0.5;
+        CGRect newFrame = CGRectMake(x, y, width, height);
+        _bottomHalfView = [[BottomHalfView alloc] initWithFrame:newFrame];
+    }
+    
+    return _bottomHalfView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    /*------------------------------------- SYMBOL TABLE ---------------------------------------*/
+    [self.view addSubview:self.topHalfView];
+    [self.view addSubview:self.bottomHalfView];
+}
 
-    array = [[NSMutableArray alloc] init];
-    NSString *glyphArray[10] = {@"❧", @"Ω", @"ྡྷ", @"۝", @"ཆ", @"☯", @"♞", @"྿", @"☢", @"Ж"};
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+- (void)displaySymbolsTable {
+    self.array = [[NSMutableArray alloc] init];
     int num9 = arc4random_uniform(10);
     int num;
     NSString *number;
@@ -39,33 +95,18 @@
         
         
         if ((i != 0 && i != 99) && (i%9 == 0)){
-            number = [NSString stringWithFormat:@"%@%i", glyphArray[num9], i];
+            number = [NSString stringWithFormat:@"%@%i", self.glyphArray[num9], i];
         }
         
         else{
-            number = [NSString stringWithFormat: @"%@%i", glyphArray[num], i];
+            number = [NSString stringWithFormat: @"%@%i", self.glyphArray[num], i];
         }
         
-        [array addObject: number];
+        [self.array addObject: number];
     }
     
-    ans = glyphArray[num9];
-    
-    /*self.answerLabel.text = glyphArray[num9];*/
+    self.ans = self.glyphArray[num9];
 
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([segue.identifier isEqualToString:@"segueFromTableToAnswer"])
-    {
-        answerViewController *controller = (answerViewController *)segue.destinationViewController;
-        controller.secretAnswer = ans;
-    }
 }
 
 
@@ -77,16 +118,17 @@
 
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return [array count];
+    return [self.array count];
 }
 
 - (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     UILabel *label = (UILabel *)[cell viewWithTag: 100];
-    label.text = [array objectAtIndex: indexPath.row];
+    label.text = [self.array objectAtIndex: indexPath.row];
     
     return cell;
 }
+
 @end
 
