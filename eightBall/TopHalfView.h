@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface TopHalfView : UIView
+@property (nonatomic) UIImageView *imgView;
+@property (nonatomic) NSArray *validImages;
+
+- (void)setImgViewImage:(NSString *)imgName;
+- (void)hideImgView:(BOOL)hide;
 
 @end
