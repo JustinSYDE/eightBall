@@ -29,7 +29,7 @@
 }
 
 - (NSArray *)validImages {
-    if (!_validImages) _validImages = @[@"oneBall", @"twoBall", @"threeBall", @"eightBall"];
+    if (!_validImages) _validImages = @[@"8ball", @"oneBall", @"twoBall", @"threeBall", @"eightBall"];
     return _validImages;
 }
 
