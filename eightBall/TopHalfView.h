@@ -14,6 +14,5 @@
 @property (nonatomic) NSArray *validDescriptions;
 
 - (void)setImgViewImage:(NSString *)imgName;
-- (void)hideImgView:(BOOL)hide;
 
 @end

@@ -52,16 +52,12 @@
 - (void)setImgViewImage:(NSString *)imgName {
     if ([self.validImages containsObject:imgName]) {
         if ([imgName isEqualToString:@"empty"]) {
-            [self hideImgView:YES];
+            self.imgView.hidden = YES;
         } else {
-            [self hideImgView:NO];
+            self.imgView.hidden = NO;
             [self.imgView setImage:[UIImage imageNamed:imgName]];
         }
     }
-}
-
-- (void)hideImgView:(BOOL)hide {
-    self.imgView.hidden = hide;
 }
 
 @end
