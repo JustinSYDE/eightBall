@@ -78,17 +78,24 @@
     [self.view addSubview:self.bottomHalfView];
     
     [self.bottomHalfView.mainBtn addTarget:self action:@selector(increaseStepCount) forControlEvents:UIControlEventTouchUpInside];
+    [self.bottomHalfView.resetBtn addTarget:self action:@selector(reset) forControlEvents:UIControlEventTouchUpInside];
     
     [self updateUI];
 }
 
 - (void)increaseStepCount {
     if (self.step >= 5) {
-        self.step = 0;
+        [self reset];
     } else {
         self.step++;
+        [self updateUI];
     }
     
+    
+}
+
+- (void)reset {
+    self.step = 0;
     [self updateUI];
 }
 
