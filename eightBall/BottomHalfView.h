@@ -14,6 +14,7 @@
 @property (nonatomic) UIButton *resetBtn;
 @property (nonatomic) UILabel *descriptionText;
 @property (nonatomic) NSArray *validDescriptions;
+@property (nonatomic) NSArray *validBtnTexts;
 
 - (void)setMainBtnText:(NSString *)text;
 - (void)hideResetBtn:(BOOL) hide;

@@ -33,10 +33,14 @@
     return _descriptionText;
 }
 
-
 - (NSArray *)validDescriptions {
     if (!_validDescriptions) _validDescriptions = @[@"Are you ready?", @"Choose any 2-digit number between 10 and 99", @"Sum both digits of your 2-digit number ", @"Subtract the sum from your original 2-digit number", @"Focus on your number's symbol", @"Was this your symbol?"];
     return _validDescriptions;
+}
+
+- (NSArray *)validBtnTexts {
+    if (!_validBtnTexts) _validBtnTexts = @[@"Ready!", @"Got It!", @"Easy!", @"Magic!", @"Again"];
+    return _validBtnTexts;
 }
 
 /*
@@ -105,7 +109,9 @@
 }
 
 - (void)setMainBtnText:(NSString *)text {
-    [self.mainBtn setTitle:text forState:UIControlStateNormal];
+    if ([self.validBtnTexts containsObject:text]) {
+        [self.mainBtn setTitle:text forState:UIControlStateNormal];
+    }
 }
 
 - (void)hideResetBtn:(BOOL)hide{

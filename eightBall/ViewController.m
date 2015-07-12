@@ -82,8 +82,10 @@
 - (void)updateUI {
     NSString *imgName = self.topHalfView.validImages[self.step];
     NSString *description = self.bottomHalfView.validDescriptions[self.step];
+    NSString *btnText = self.bottomHalfView.validBtnTexts[self.step];
     [self.topHalfView setImgViewImage:imgName];
     [self.bottomHalfView setDescriptionWithText:description];
+    [self.bottomHalfView setMainBtnText:btnText];
 }
 
 - (void)didReceiveMemoryWarning {
