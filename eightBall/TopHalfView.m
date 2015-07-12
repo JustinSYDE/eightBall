@@ -29,7 +29,7 @@
 }
 
 - (NSArray *)validImages {
-    if (!_validImages) _validImages = @[@"8ball", @"oneBall", @"twoBall", @"threeBall", @"eightBall"];
+    if (!_validImages) _validImages = @[@"8ball", @"oneBall", @"twoBall", @"threeBall", @"", @"eightBall"];
     return _validImages;
 }
 
@@ -39,12 +39,14 @@
 }
 
 - (void)setupImgViewWithFrame:(CGRect)frame {
-    float const width = frame.size.width  * 0.8;
-    float const height = frame.size.height * 0.8;
+    float const width = frame.size.width  * 0.6;
+    float const height = frame.size.height * 0.7;
     float const x = (frame.size.width - width) * 0.5;
-    float const y = 0;
+    float const y = frame.size.height * 0.25;
     CGRect newFrame = CGRectMake(x, y, width, height);
     self.imgView.frame = newFrame;
+    
+    [self addSubview:self.imgView];
 }
 
 - (void)setImgViewImage:(NSString *)imgName {

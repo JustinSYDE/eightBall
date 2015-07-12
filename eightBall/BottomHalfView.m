@@ -33,6 +33,12 @@
     return _descriptionText;
 }
 
+
+- (NSArray *)validDescriptions {
+    if (!_validDescriptions) _validDescriptions = @[@"Are you ready?", @"Choose any 2-digit number between 10 and 99", @"Sum both digits of your 2-digit number ", @"Subtract the sum from your original 2-digit number", @"Focus on your number's symbol", @"Was this your symbol?"];
+    return _validDescriptions;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -63,7 +69,8 @@
     
     self.descriptionText.backgroundColor = [UIColor clearColor];
     self.descriptionText.numberOfLines = 3;
-    
+    self.descriptionText.textAlignment = NSTextAlignmentCenter;
+    self.descriptionText.font = [UIFont fontWithName:@"Helvetica" size:24.0];
     [self addSubview:self.descriptionText];
 }
 
@@ -106,7 +113,9 @@
 }
 
 - (void)setDescriptionWithText:(NSString *)text {
-    [self.descriptionText setText:text];
+    if ([self.validDescriptions containsObject:text]) {
+        [self.descriptionText setText:text];
+    }
 }
 
 @end

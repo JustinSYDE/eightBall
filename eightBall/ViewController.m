@@ -76,6 +76,14 @@
     [super viewDidLoad];
     [self.view addSubview:self.topHalfView];
     [self.view addSubview:self.bottomHalfView];
+    [self updateUI];
+}
+
+- (void)updateUI {
+    NSString *imgName = self.topHalfView.validImages[self.step];
+    NSString *description = self.bottomHalfView.validDescriptions[self.step];
+    [self.topHalfView setImgViewImage:imgName];
+    [self.bottomHalfView setDescriptionWithText:description];
 }
 
 - (void)didReceiveMemoryWarning {

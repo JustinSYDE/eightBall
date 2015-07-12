@@ -11,6 +11,7 @@
 @interface TopHalfView : UIView
 @property (nonatomic) UIImageView *imgView;
 @property (nonatomic) NSArray *validImages;
+@property (nonatomic) NSArray *validDescriptions;
 
 - (void)setImgViewImage:(NSString *)imgName;
 - (void)hideImgView:(BOOL)hide;
