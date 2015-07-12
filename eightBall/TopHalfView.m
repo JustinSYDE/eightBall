@@ -29,7 +29,7 @@
 }
 
 - (NSArray *)validImages {
-    if (!_validImages) _validImages = @[@"8ball", @"oneBall", @"twoBall", @"threeBall", @"", @"eightBall"];
+    if (!_validImages) _validImages = @[@"8ball", @"oneBall", @"twoBall", @"threeBall", @"empty", @"eightBall"];
     return _validImages;
 }
 
@@ -51,7 +51,12 @@
 
 - (void)setImgViewImage:(NSString *)imgName {
     if ([self.validImages containsObject:imgName]) {
-        [self.imgView setImage:[UIImage imageNamed:imgName]];
+        if ([imgName isEqualToString:@"empty"]) {
+            [self hideImgView:YES];
+        } else {
+            [self hideImgView:NO];
+            [self.imgView setImage:[UIImage imageNamed:imgName]];
+        }
     }
 }
 

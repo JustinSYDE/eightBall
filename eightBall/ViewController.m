@@ -76,6 +76,19 @@
     [super viewDidLoad];
     [self.view addSubview:self.topHalfView];
     [self.view addSubview:self.bottomHalfView];
+    
+    [self.bottomHalfView.mainBtn addTarget:self action:@selector(increaseStepCount) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self updateUI];
+}
+
+- (void)increaseStepCount {
+    if (self.step >= 5) {
+        self.step = 0;
+    } else {
+        self.step++;
+    }
+    
     [self updateUI];
 }
 
@@ -118,7 +131,6 @@
     self.ans = self.glyphArray[num9];
 
 }
-
 
 #pragma mark Collection View Methods
 

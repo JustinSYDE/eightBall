@@ -39,7 +39,7 @@
 }
 
 - (NSArray *)validBtnTexts {
-    if (!_validBtnTexts) _validBtnTexts = @[@"Ready!", @"Got It!", @"Easy!", @"Magic!", @"Again"];
+    if (!_validBtnTexts) _validBtnTexts = @[@"Ready!", @"Got It!", @"Easy!", @"Done!", @"Magic!", @"Again"];
     return _validBtnTexts;
 }
 
