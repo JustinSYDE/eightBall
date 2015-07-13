@@ -76,8 +76,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self generateData];
+    [self.view addSubview:self.topHalfView];
     [self setupCollectionView];
-    //[self.view addSubview:self.topHalfView];
     [self.view addSubview:self.bottomHalfView];
     
     [self.bottomHalfView.mainBtn addTarget:self action:@selector(increaseStepCount) forControlEvents:UIControlEventTouchUpInside];
@@ -97,7 +97,10 @@
 
 - (void)reset {
     self.step = 0;
+    [self.array removeAllObjects];
+    [self generateData];
     [self updateUI];
+    [self.collectionView reloadData];
 }
 
 - (void)updateUI {
@@ -107,6 +110,7 @@
     [self.topHalfView setImgViewImage:imgName];
     [self.bottomHalfView setDescriptionWithText:description];
     [self.bottomHalfView setMainBtnText:btnText];
+    self.collectionView.hidden = (self.step == 4) ? NO: YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -123,6 +127,7 @@
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
     [self.collectionView setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview:self.collectionView];
+    self.collectionView.hidden = YES;
 }
 
 - (void)generateData {
@@ -163,23 +168,19 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellIdentifier" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor clearColor];
     
-    UILabel *label = (UILabel *)[cell viewWithTag:99];
+    UILabel *label = (UILabel *)[cell viewWithTag:100];
     if (!label) {
         label = [[UILabel alloc] initWithFrame:cell.bounds];
-        label.tag = 99;
-        label.text = [self.array objectAtIndex:indexPath.row];
+        label.tag = 100;
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = [UIColor blackColor];
         [cell.contentView addSubview:label];
     }
     
+    label.text = [self.array objectAtIndex:indexPath.row];
+    
     return cell;
 }
-
-/*- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return CGSizeMake(50, 50);
-}*/
 
 @end
 
