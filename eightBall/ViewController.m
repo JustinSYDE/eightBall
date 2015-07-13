@@ -110,7 +110,14 @@
     [self.topHalfView setImgViewImage:imgName];
     [self.bottomHalfView setDescriptionWithText:description];
     [self.bottomHalfView setMainBtnText:btnText];
-    self.collectionView.hidden = (self.step == 4) ? NO: YES;
+    
+    if (self.step == 5) {
+        [self.topHalfView setAnswerViewWithText:self.ans];
+    }
+    
+    self.collectionView.hidden = (self.step == 4) ? NO : YES;
+    self.bottomHalfView.resetBtn.hidden = (self.step == 0) ? YES : NO;
+    self.topHalfView.answerLabel.hidden = (self.step == 5) ? NO : YES;
 }
 
 - (void)didReceiveMemoryWarning {

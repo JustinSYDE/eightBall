@@ -23,6 +23,7 @@
     
     if (self) {
         [self setupImgViewWithFrame:frame];
+        [self setupAnswerView:frame];
     }
     
     return self;
@@ -36,6 +37,11 @@
 - (UIImageView *)imgView {
     if (!_imgView) _imgView = [[UIImageView alloc] init];
     return _imgView;
+}
+
+- (UILabel *)answerLabel {
+    if (!_answerLabel) _answerLabel = [[UILabel alloc] init];
+    return _answerLabel;
 }
 
 - (void)setupImgViewWithFrame:(CGRect)frame {
@@ -58,6 +64,23 @@
             [self.imgView setImage:[UIImage imageNamed:imgName]];
         }
     }
+}
+
+- (void)setupAnswerView:(CGRect)frame {
+    float const width = frame.size.width  * 0.3;
+    float const height = width;
+    float const x = (frame.size.width - width) * 0.5;
+    float const y = frame.size.height * 0.43;
+    CGRect newFrame = CGRectMake(x, y, width, height);
+    self.answerLabel.frame = newFrame;
+    self.answerLabel.font = [UIFont fontWithName:@"Helvetica-bold" size:75.0];
+    [self.answerLabel setTextColor:[UIColor whiteColor]];
+    self.answerLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.answerLabel];
+}
+
+- (void)setAnswerViewWithText:(NSString *)answer {
+    self.answerLabel.text = answer;
 }
 
 @end

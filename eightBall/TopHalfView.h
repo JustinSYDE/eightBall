@@ -12,7 +12,9 @@
 @property (nonatomic) UIImageView *imgView;
 @property (nonatomic) NSArray *validImages;
 @property (nonatomic) NSArray *validDescriptions;
+@property (nonatomic) UILabel *answerLabel;
 
 - (void)setImgViewImage:(NSString *)imgName;
+- (void)setAnswerViewWithText:(NSString *)answer;
 
 @end
