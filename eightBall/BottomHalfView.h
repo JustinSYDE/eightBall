@@ -16,6 +16,7 @@
 @property (nonatomic) NSArray *validDescriptions;
 @property (nonatomic) NSArray *validBtnTexts;
 
+- (UIColor *)colorFromHexString:(NSString *)hexString;
 - (void)setMainBtnText:(NSString *)text;
 - (void)hideResetBtn:(BOOL) hide;
 - (void)setDescriptionWithText:(NSString *)text;

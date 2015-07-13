@@ -7,6 +7,7 @@
 //
 
 #import "TopHalfView.h"
+#import <sys/sysctl.h>
 
 @implementation TopHalfView
 
@@ -17,6 +18,20 @@
     // Drawing code
 }
 */
+
+- (BOOL)isIPhone4 {
+    size_t size;
+    sysctlbyname("hw.machine", NULL, &size, NULL, 0);
+    char *machine = malloc(size);
+    sysctlbyname("hw.machine", machine, &size, NULL, 0);
+    NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
+    free(machine);
+
+    if ([platform isEqualToString:@"iPhone4,1"] || [platform isEqualToString:@"x86_64"]) {
+        return true;
+    }
+        return false;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -45,8 +60,13 @@
 }
 
 - (void)setupImgViewWithFrame:(CGRect)frame {
-    float const width = frame.size.width  * 0.6;
-    float const height = frame.size.height * 0.7;
+    float width;
+    if ([self isIPhone4]) {
+        width = frame.size.width  * 0.5;
+    } else {
+        width = frame.size.width  * 0.6;
+    }
+    float const height = width;
     float const x = (frame.size.width - width) * 0.5;
     float const y = frame.size.height * 0.25;
     CGRect newFrame = CGRectMake(x, y, width, height);
@@ -67,13 +87,21 @@
 }
 
 - (void)setupAnswerView:(CGRect)frame {
-    float const width = frame.size.width  * 0.3;
+    float width, y;
+    if ([self isIPhone4]) {
+        width = frame.size.width  * 0.2;
+        self.answerLabel.font = [UIFont fontWithName:@"Helvetica-bold" size:55.0];
+        y = frame.size.height * 0.44;
+    } else {
+        width = frame.size.width  * 0.3;
+        self.answerLabel.font = [UIFont fontWithName:@"Helvetica-bold" size:75.0];
+        y = frame.size.height * 0.43;
+    }
     float const height = width;
     float const x = (frame.size.width - width) * 0.5;
-    float const y = frame.size.height * 0.43;
+    
     CGRect newFrame = CGRectMake(x, y, width, height);
     self.answerLabel.frame = newFrame;
-    self.answerLabel.font = [UIFont fontWithName:@"Helvetica-bold" size:75.0];
     [self.answerLabel setTextColor:[UIColor whiteColor]];
     self.answerLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:self.answerLabel];

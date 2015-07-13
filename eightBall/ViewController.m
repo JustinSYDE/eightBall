@@ -24,7 +24,7 @@
 
 - (NSArray *)glyphArray {
     if (!_glyphArray)
-        _glyphArray = @[@"❧", @"Ω", @"ྡྷ", @"۝", @"ཆ", @"☯", @"♞", @"྿", @"☢", @"Ж"];
+        _glyphArray = @[@"❧", @"Ω", @"☸", @"۝", @"ཆ", @"☯", @"♞", @"྿", @"☢", @"Ж"];
     return _glyphArray;
 }
 

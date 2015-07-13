@@ -7,8 +7,23 @@
 //
 
 #import "BottomHalfView.h"
+#import <sys/sysctl.h>
 
 @implementation BottomHalfView
+
+- (BOOL)isIPhone4 {
+    size_t size;
+    sysctlbyname("hw.machine", NULL, &size, NULL, 0);
+    char *machine = malloc(size);
+    sysctlbyname("hw.machine", machine, &size, NULL, 0);
+    NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
+    free(machine);
+    
+    if ([platform isEqualToString:@"iPhone4,1"] || [platform isEqualToString:@"x86_64"]) {
+        return true;
+    }
+    return false;
+}
 
 - (UIColor *)colorFromHexString:(NSString *)hexString {
     unsigned rgbValue = 0;
@@ -39,7 +54,7 @@
 }
 
 - (NSArray *)validBtnTexts {
-    if (!_validBtnTexts) _validBtnTexts = @[@"Ready!", @"Got It!", @"Easy!", @"Done!", @"Magic!", @"Again"];
+    if (!_validBtnTexts) _validBtnTexts = @[@"Ready", @"Got It", @"Easy", @"Done", @"Magic", @"Again"];
     return _validBtnTexts;
 }
 
@@ -74,21 +89,26 @@
     self.descriptionText.backgroundColor = [UIColor clearColor];
     self.descriptionText.numberOfLines = 3;
     self.descriptionText.textAlignment = NSTextAlignmentCenter;
-    self.descriptionText.font = [UIFont fontWithName:@"Helvetica" size:24.0];
+    if ([self isIPhone4]) {
+        self.descriptionText.font = [UIFont fontWithName:@"Helvetica" size:18.0];
+    } else {
+        self.descriptionText.font = [UIFont fontWithName:@"Helvetica" size:24.0];
+    }
     [self addSubview:self.descriptionText];
 }
 
 - (void)setupMainBtnWithFrame:(CGRect)frame {
     float const width = frame.size.width / 3.0;
-    float const height = frame.size.height / 5.0;
+    float const height = frame.size.height / 4.0;
     float const x = width;
-    float const y = frame.size.height * 0.5;
+    float const y = frame.size.height * 0.4;
     CGRect newFrame = CGRectMake(x, y, width, height);
     self.mainBtn.frame = newFrame;
     
     self.mainBtn.backgroundColor = [self colorFromHexString:@"#0f75bc"];
     [self.mainBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.mainBtn.layer.cornerRadius = 8;
+    self.mainBtn.font = [UIFont fontWithName:@"Helvetica-bold" size:24.0];
     
     [self addSubview:self.mainBtn];
 }
