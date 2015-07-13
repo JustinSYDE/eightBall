@@ -22,6 +22,7 @@
 		E81DA0341A08826A00C0029E /* eightBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E81DA0331A08826A00C0029E /* eightBall.png */; };
 		E85EFE811A09ED9000F6AEE6 /* 8ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E85EFE801A09ED9000F6AEE6 /* 8ball.png */; };
 		E8B083D91A68BE4900E34E84 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8B083D81A68BE4900E34E84 /* Entitlements.plist */; };
+		E8FCC7B91B5370170048B3AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FCC7B81B5370170048B3AA /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		E81DA0331A08826A00C0029E /* eightBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eightBall.png; path = images/eightBall.png; sourceTree = "<group>"; };
 		E85EFE801A09ED9000F6AEE6 /* 8ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8ball.png; path = images/8ball.png; sourceTree = "<group>"; };
 		E8B083D81A68BE4900E34E84 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = eightBallTests/Entitlements.plist; sourceTree = SOURCE_ROOT; };
+		E8FCC7B81B5370170048B3AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../.Trash/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				E818A8F31B51B91B00652DB4 /* BottomHalfView.h */,
 				E818A8F41B51B91B00652DB4 /* BottomHalfView.m */,
 				E816E1B91A057444009EE31B /* LaunchScreen.xib */,
+				E8FCC7B81B5370170048B3AA /* Images.xcassets */,
 				E816E1AA1A057444009EE31B /* Supporting Files */,
 			);
 			path = eightBall;
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E816E1BB1A057444009EE31B /* LaunchScreen.xib in Resources */,
+				E8FCC7B91B5370170048B3AA /* Images.xcassets in Resources */,
 				E816E1E11A059D15009EE31B /* threeBall.png in Resources */,
 				E816E1E21A059D15009EE31B /* twoBall.png in Resources */,
 				E81DA0341A08826A00C0029E /* eightBall.png in Resources */,
